@@ -1,5 +1,5 @@
 // JavaScript Document
-
+// Autor: Bernardo Castán Martínez
 // Declaración de variables del juego
 let jugador = null;
 let color = "";
