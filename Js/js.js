@@ -158,7 +158,6 @@ function pintabolasInicio(){
 
 function quitabolasFinaliza(){
 	location.reload();
-	
 	setearVariables();
 	document.getElementById("nuevaPartida").disabled = false;
 }
@@ -212,7 +211,7 @@ function resultados(){
 				try{
 					var casilla = id2.charAt(id2.length-1);
 				}
-				catch (error){ console.log("error encontrado")}
+				catch (error){ }
 
 						// Comprobar si la casilla está libre
 						if (casillasTablero[casilla]==0){
@@ -225,12 +224,9 @@ function resultados(){
 							// Liberamos la casilla de procedencia a partir de la ronda 6:
 							if (ronda>5){
 								for (var i = jugadas.length-1; i>=0 ; i--){
-									console.log("La longitud de jugadas es : " + i);
 									var cadenaBola = jugadas[i].substr(0,3);
-									console.log("La cadena extraida de la bola es : " + cadenaBola);
 									if (cadenaBola==id){
 										var cadenaCasilla = jugadas[i].substr(-1);
-										console.log("La cadena extraida de la Casilla es : " + cadenaCasilla);
 										casillasTablero[cadenaCasilla] = 0;
 										break ;
 									}
@@ -239,10 +235,7 @@ function resultados(){
 
 							// Almacenamos la jugada
 							jugadas[ronda]= id + ":" + id2;
-							console.log("Se almacenó la jugada: " + jugadas[ronda]);
-							console.log(jugadas);
-							console.log(casillasTablero);
-
+		
 							// Permitimos el drop:			
 							e.target.appendChild(document.getElementById(id));
 
