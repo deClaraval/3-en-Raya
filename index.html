@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Bernardo Castán Martínez" />
+	<meta name="Description" content="Las tres en raya" />
+	<title>Las tres en raya</title>
+	<link rel="stylesheet" href="css/css.css">
+	<link href="css/css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="contenedor">
+		<h1>Tres en Raya</h1>
+			<div class="contenedorTablero">
+				<div id="Jugador1">
+					<div><h1>R</h1></div>
+					<div id="CajaP1">
+						<div id="CP1-0" class="casillaCajita"></div>
+						<div id="CP1-1" class="casillaCajita"></div>
+						<div id="CP1-2" class="casillaCajita"></div>
+					</div>
+				</div>
+
+				<div id="Tablero"></div>
+
+				<div id="Jugador2">
+					<div><h1>A</h1></div>
+					<div id="CajaP2">
+						<div id="CP2-0" class="casillaCajita"></div>
+						<div id="CP2-1" class="casillaCajita"></div>
+						<div id="CP2-2" class="casillaCajita"></div>
+					</div>
+				</div>
+			</div>
+		<h3 id="status">Bienvenid@s a 3 en Raya</h3>
+		<h2 id="Marcadores">Marcadores ! -> Rojo:0 / Azul:0</h2>
+		<h2 id="ganador">Inicie partida</h2>
+		<p>
+			<button id="nuevaPartida" onclick="nuevaPartida()" class="controlesJuego">Nueva Partida</button>
+			<button id="quitabolasFinaliza" onclick="quitabolasFinaliza()" class="controlesJuego">Acabar Partida</button>
+		</p>
+	</div>
+<script src="Js/js.js"></script>
+</body>
+</html>

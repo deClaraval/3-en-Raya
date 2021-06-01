@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "ChGamesBlack";
+    src:url("../Font/Ch_Games_Black.otf")
+}
+@font-face{
+	font-family: "ChGamesThin";
+    src:url("../Font/Ch_Games_Thin.otf")format("opentype");
+}
+/* Centrado del cuerpo */
+
+body {
+	display:flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Estilos de cabeceras */
+
+h1{
+	font-family: "ChGamesBlack";
+	display:block;
+	text-align: center;
+}
+h2{
+	font-family: "ChGamesBlack";
+	display:block;
+}
+
+#status{
+	font-family: "ChGamesThin";
+	color:darkblue;
+	font-weight: bold;
+	border-left: solid 1px black;
+	border-right: solid 1px black;
+	border-radius:20px;
+}
+#Marcadores {
+	color:transparent;
+}
+h3{
+	padding: 20px;
+}
+p{
+	font-family: "ChGamesThin";
+	font-size: 1.2em;
+	font-weight: bold;
+	display:block;
+	text-align: center;
+}
+
+/* Estilos de contenidos */
+
+.contenedor {
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	width: 700px;
+	height: auto;
+}
+
+/* Estilos para los elementos de juego */ 
+
+.contenedorTablero{
+	display:flex;
+	width: 700px;
+}
+
+#Tablero{
+	/*border: 1px solid black;*/
+	width: 500px;
+	height: 500px;
+	margin:0;
+	background-image: url("../Imgs/Tablero.png");
+	background-position: center center;
+	background-size: 100%;
+	display:flex;
+	flex-wrap:wrap;
+	border-radius: 10px; 
+	justify-content:center; 
+	align-content: center;
+	align-items: center; 
+}
+#Tablero .hoverr{
+	background-color: rgba(255,50,50,.4);
+}
+
+#Tablero .hovera{
+	background-color: rgba(50,50,255,.4);
+}
+
+.casillaTablero{
+	width: 166px;
+	height: 166px;
+	margin:0px;
+	padding:0px;
+	/*border:solid 1px black;*/
+	display:flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	transition: .5s all;	
+}
+
+#CajaP1, #CajaP2{
+	width: 100px;
+	height: 300px;
+	background-image: url("../Imgs/cajita.png");
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+#CajaP1{
+	border: solid 2px red;
+}
+
+#CajaP2{
+	border: solid 2px darkorchid;
+}
+
+#Jugador1, #Jugador2{
+	width: 100px;
+	height: 300px;
+	display:flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	margin-top: 8%;
+}
+.casillaCajita{
+	width: 100px;
+	height: 100px;
+}
+
+.bolaJ1, .bolaJ2{
+	position:absolute;
+	border-radius: 50%;
+}
+.bolaJ1:hover{
+	content:url("../Imgs/bola11.png");
+}
+
+.bolaJ2:hover{
+	content:url("../Imgs/bola22.png");
+}
+
+
+.controlesJuego{
+	margin-top:20px;
+	padding:10px;
+	border-radius: 15px;
+	font-family: "ChGamesBlack";
+}
