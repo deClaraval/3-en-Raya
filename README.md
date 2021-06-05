@@ -3,7 +3,7 @@ Versión en Html &amp; Js del clásico juego de las 3 en raya / Html &amp; Js ve
 
 Comenzando 🚀
 
-Mira Deployment para probar el proyecto. : <a href="https://declaraval.github.io/3-en-Raya/" target="blank"> 3 en Raya !!</a>
+Mira Deployment para probar el proyecto: <a href="https://declaraval.github.io/3-en-Raya/" target="blank"> 3 en Raya !!</a>
 
 Pre-requisitos 📋
 Se recomienda tener actualizado tu navegador web, Firefox, Chrome, Opera, Edge...
